@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let a ='hii';
+        console.log(a,typeof a);
+
+        let b ='hello';
+        console.log(b,typeof b);
+
+        let c = `bye`
+        console.log(c,typeof c);
+
+        //String interpolation---${}
+
+
+        let x=10;
+        let y=20;
+        console.log("the add of x and y is x+y");
+
+        console.log('the add of ${x} and ${y} is ${x+y}');
+
+        console.log(`the add of ${x} and ${y} is ${x+y}`);
+
+        // inbuild methods 
+        // 1.length
+
+        let str="kolkata"
+        console.log(str.length);
+
+        // 2.toUpperCase();
+
+        let str1="howrah";
+        console.log(str1.toUpperCase());
+
+        // 3.toLowerCase();
+
+        let str2="HOWRAH";
+        console.log(str2.toLowerCase());
+
+        // 4.charAt(index);
+
+        let str3="qspiders"
+        console.log(str3.charAt(0));
+
+        // 5.charCodeAt(index);
+
+        let str4="kolkata";
+        console.log(str4.charCodeAt(4));
+
+        // 6.Slice(startindex,endindex);
+
+        let str5="qspider";
+        console.log(str5.slice(0,5));
+        console.log(str5.slice(-7,-2));
+
+        //7. Substring(startindex,endindex)
+        let str6="javascript";
+        console.log(str6.substring(0,4));
+
+        //8. Substr(startindex,count)
+        let str7="javascript";
+        console.log(str7.substr(0,4));
+
+        //9. concat(str)
+        let str8="hello";
+        let str9="world";
+        console.log(str8.concat(" ",str9));
+
+        //10.replace(oldvalue,newvalue)
+        let str10="hello world";
+        console.log(str10.replace("world","javascript"));
+
+        //11. replaceAll(oldvalue,newvalue)
+        let str11="hello world world";
+        console.log(str11.replaceAll("world","javascript"));
+
+        //12.split(regular expression or separator)
+        //separator--->string or regular expression or character
+
+        let str12="hello-world-javascript";
+        console.log(str12.split("-"));
+        let str13="hello world javascript";
+        console.log(str13.split(" "));
+        let str14="hello@world@javascript";
+        console.log(str14.split("@"));
+
+        //13.trim()
+        let str15="   hello world   ";
+        console.log(str15.trim());
+
+        //14.trimStart()
+        let str16="   hello world   ";
+        console.log(str16.trimStart());
+
+        //15.trimEnd()
+        let str17="   hello world   ";
+        console.log(str17.trimEnd());
+
+        //16. padStart(targetLength,characters)
+        let str18="5";
+        console.log(str18.padStart(3,"0"));
+
+        //17. padEnd(targetLength,characters)
+        let str19="5";
+        console.log(str19.padEnd(3,"0"));
+
+        //18. startsWith(searchstring,position)
+        let str20="hello world";
+        console.log(str20.startsWith("hello"));
+
+
+        //19. endsWith(searchstring,position)
+        let str21="hello world";
+        console.log(str21.endsWith("world"));
+
+        //20. includes(searchstring,position)
+        let str22="hello world";
+        console.log(str22.includes("lo wo"));
+
+        //21. indexOf(searchstring,position)
+        let str23="hello world";
+        console.log(str23.indexOf("o"));
+
+        //22. lastIndexOf(searchstring,position)
+        let str24="hello world world";
+        console.log(str24.lastIndexOf("world"));
+
+        //23. repeat(no of times want to repeat)
+        let str25="hi ";
+        console.log(str25.repeat(3));
+
+        //24.search(searchstring)
+        let str26="hello world";
+        console.log(str26.search("world"));
+        
+    </script>
+</body>
+</html>

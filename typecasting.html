@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        
+       
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //implicit typecasting
+        let a=10/10+"7"+100;
+        console.log(a,typeof a);
+
+        let b=10/10+"7"*100;
+        console.log(b,typeof b);
+
+        console.log("17"*"17");
+        console.log("a"*10);
+
+        //explicit typecasting
+
+        let x=100;
+        console.log(x,typeof x);
+
+        let y=String(x);
+        console.log(y,typeof y);
+
+
+        let m="100";
+        console.log(m,typeof m);
+
+        let n=Number(m);
+        console.log(n,typeof n);
+
+        // dynamic input
+
+        let number=prompt("enter a number: ");
+        console.log(number, typeof number);
+
+        // let input=prompt("enter the value of x: ");
+        // console.log(`user entered ${input}`,typeof input);
+        // let input1=prompt("enter the value of y");
+        // let c=Number(input);
+        // let d=Number(input1);
+        // console.log(c+d);
+
+
+        // let input=Number(prompt("enter the value of x"));
+        // let input1=Number(prompt("enter the value of y"));
+        // console.log(input+input1);
+
+         // console.log(Number(prompt("enter the value of x")))+Number(prompt(Number("enter the value of y")));
+
+        let otp=1234;
+        let gtp=Number(prompt(`enter the otp ${otp}`))
+        if(otp==gtp){
+            alert("login successful")
+        }else{
+            alert("login failed")
+        }
+
+        
+
+    </script>
+</body>
+</html>

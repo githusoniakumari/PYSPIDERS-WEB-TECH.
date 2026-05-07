@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10;
+        console.log(a,typeof a);
+
+        let b=98.98
+        console.log(b,typeof b);
+
+        //inbuild methods
+
+        //1. parseInt();
+        let x=10/3;
+        console.log(parseInt(x)); //output : 3
+
+
+            // while loop program
+        let no=123456;
+        let count=0;
+        while(no!=0){
+            let rem=parseInt(no%10);
+            console.log(rem);
+            count++;
+            no=parseInt(no/10)
+        }
+
+        //2. parseFloat();
+        console.log(parseFloat(10/3)); //output: 3.3333333333333335
+
+        //3.toFixed();
+        y=10.55521;
+        console.log(y.toFixed(3)); //10.555
+
+        //4. Number.isInteger();
+        let m=100;
+        console.log(Number.isInteger(m)); //true
+
+        let n=10.25;
+        console.log(Number.isInteger(n)); //false
+
+        //5. Number.isFinite();
+        let r=100/2;
+        console.log(Number.isFinite(r)); //true
+
+        let s=100/0;
+        console.log(Number.isFinite(s)); //false
+
+        //6. Number.isNaN();
+        let g=100;
+        console.log(Number.isNaN(g)); //false
+
+        let f=NaN;  
+        console.log(Number.isNaN(f)); // true
+
+        //NaN
+
+        console.log("hi"**2); //NaN
+        console.log(parseInt("hii")); // NaN
+
+    </script>
+</body>
+</html>
